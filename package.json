@@ -1,0 +1,30 @@
+{
+  "name": "cmc-api-wrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon  --require dotenv/config -r esm  src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malcodeman/cmc-api-wrapper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/malcodeman/cmc-api-wrapper/issues"
+  },
+  "homepage": "https://github.com/malcodeman/cmc-api-wrapper#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0",
+    "nodemon": "^1.19.0"
+  }
+}
