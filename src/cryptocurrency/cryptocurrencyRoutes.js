@@ -1,9 +1,13 @@
 import express from "express";
 
-import { getAllCryptocurrenciesLatest } from "./cryptocurrencyController";
+import {
+  getAllCryptocurrenciesLatest,
+  getMarketQuotesLatest
+} from "./cryptocurrencyController";
 
 const router = express.Router();
 
 router.get("/listing/latest", getAllCryptocurrenciesLatest);
+router.get("/quotes/latest", getMarketQuotesLatest);
 
 export default router;
