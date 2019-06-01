@@ -2,7 +2,11 @@ import axios from "../axiosInstance";
 
 export async function getCoinMarketCapMap(req, res, next) {
   try {
-    const response = await axios.get("/cryptocurrency/map");
+    const start = req.query.start || 1;
+    const limit = req.query.limit || 50;
+    const response = await axios.get(
+      `/cryptocurrency/map?start=${start}&limit=${limit}`
+    );
     const data = response.data.data;
 
     res.status(200).send(data);
