@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/malcodeman/cmc-api-wrapper#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "cors": "^2.8.5",
     "esm": "^3.2.25",
     "express": "^4.17.0"
